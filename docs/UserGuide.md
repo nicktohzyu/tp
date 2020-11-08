@@ -636,7 +636,7 @@ You can use this command to edit an existing hairdresser in the database.
 
 **Format:** 
 
-`edit_hairdresser ID [n/NAME] [p/PHONE] [e/EMAIL] [e/GENDER] [ti/TITLE] [s/SPECIALISATION]…​`
+`edit_hairdresser ID [n/NAME] [p/PHONE] [e/EMAIL] [g/GENDER] [ti/TITLE] [s/SPECIALISATION]…​`
 
 <div markdown="block" class="alert alert-info">
 
@@ -865,6 +865,8 @@ You can use this command to edit an existing appointment in the database.
 
 * Only the status of the appointment can be updated. If you wish to change other aspects of an appointment, such as the client/hairdresser/time, simply delete the appointment and create a new one.
 
+* Only appointments in the past can be marked as COMPLETED or MISSED
+
 <div markdown="block" class="alert alert-info">
 
 :information_source:<br>
@@ -906,7 +908,6 @@ Removes a specific appointment from the database.
 * Deletes the appointment with the specified `ID`.
 * The ID refers to the appointment ID `aid` shown in the displayed appointment list.
 * The ID **must be a positive integer** 1, 2, 3, …​
-* All appointments with this corresponding hairdresser will now show "DELETED" for the hairdresser placeholder
 </div>
 
 **Example**:
